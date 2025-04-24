@@ -73,10 +73,10 @@ async function initDB() {
 
 if (process.env.NODE_ENV === 'production') {
 
-    app.use(express.static(path.join(__dirname, '../note-app/dist')));
+    app.use(express.static(path.join(__dirname, '../note-app-frontend/dist')));
 
     app.get(/^\/(?!api).*/, (req, res) => {
-        res.sendFile(path.join(__dirname, '../note-app/dist', 'index.html'));
+        res.sendFile(path.join(__dirname, '../note-app-frontend/dist', 'index.html'));
     });
 }
 

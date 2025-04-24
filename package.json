@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix note-app && npm install --prefix note-app-backend && npm run build --prefix note-app",
+    "build": "npm install --prefix note-app-frontend && npm install --prefix note-app-backend && npm run build --prefix note-app-frontend",
     "start": "npm run start --prefix note-app-backend"
   },
   "keywords": [],
